@@ -2,12 +2,20 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public float dysphoria = 100;
-    public float timeToReturn = 1000;
+    public styleSlots styleSlot;
+
+    public static int dysphoria;
+    public int startDysphoria = 100;
+
+    public static int timeToReturn;
+    public int startTimeToReturn = 1000;
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        dysphoria = startDysphoria;
+        timeToReturn = startTimeToReturn;
     }
 }
+
+public enum styleSlots { hair, top, bottom, makeup }

@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    private float playerSpeed = 2.0f;
-    private float jumpHeight = 1.5f;
+    public float playerSpeed = 2.0f;
+    public float jumpHeight = 1.5f;
     private float gravityValue = -9.81f;
 
     public CharacterController controller;
@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
     public Transform playerCamera;
 
     float yRotation = 0f;
-    float xRotation = 0f;
 
     void Start()
     {
