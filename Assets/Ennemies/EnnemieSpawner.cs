@@ -28,6 +28,8 @@ public class EnnemieSpawner : MonoBehaviour
         if (spawnAction.action.WasPressedThisFrame())
         {
             Instantiate(ennemiePrefab, spawnPoint.position, spawnPoint.rotation);
+            Debug.Log("dyspho : " + PlayerStats.dysphoria);
+            Debug.Log("charac : " + PlayerStats.ActiveCharac);
         }
     }
 }
